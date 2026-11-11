@@ -1,6 +1,7 @@
 import { Menu, Rocket } from "lucide-react";
 import Link from "next/link";
 
+import { NavLink } from "@/components/layout/nav-link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import {
@@ -25,13 +26,9 @@ export function Header() {
 
         <nav className="hidden items-center gap-6 text-sm md:flex">
           {siteConfig.nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
+            <NavLink key={item.href} href={item.href}>
               {item.title}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
@@ -55,9 +52,9 @@ export function Header() {
               <nav className="flex flex-col gap-4 px-4">
                 {siteConfig.nav.map((item) => (
                   <SheetClose asChild key={item.href}>
-                    <Link href={item.href} className="text-sm font-medium">
+                    <NavLink href={item.href} variant="mobile">
                       {item.title}
-                    </Link>
+                    </NavLink>
                   </SheetClose>
                 ))}
               </nav>

@@ -1,4 +1,4 @@
-import { Layers, Moon, Palette, Shapes, Zap } from "lucide-react";
+import { ExternalLink, Layers, Moon, Palette, Shapes, Zap } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -58,6 +58,8 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               Next.js 문서
+              <ExternalLink aria-hidden="true" />
+              <span className="sr-only">(새 창에서 열림)</span>
             </a>
           </Button>
           <Button asChild variant="outline">
@@ -67,6 +69,8 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               shadcn/ui 문서
+              <ExternalLink aria-hidden="true" />
+              <span className="sr-only">(새 창에서 열림)</span>
             </a>
           </Button>
         </div>

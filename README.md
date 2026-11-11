@@ -37,7 +37,7 @@ http://localhost:3000 에서 확인할 수 있습니다.
 src/
 ├── app/                 # 라우트 (layout, page, not-found, error, loading)
 ├── components/
-│   ├── layout/          # Header, Footer
+│   ├── layout/          # Header, Footer, NavLink(active 표시, 외부 링크 자동 감지)
 │   ├── ui/              # shadcn/ui 컴포넌트
 │   ├── theme-provider.tsx
 │   └── theme-toggle.tsx
