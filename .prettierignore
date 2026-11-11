@@ -1,0 +1,5 @@
+# shadcn/ui가 생성하는 파일은 포맷 대상에서 제외
+src/components/ui
+src/lib/utils.ts
+.next
+package-lock.json
